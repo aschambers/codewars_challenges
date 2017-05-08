@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Codewars - SquareEveryDigit</title>
+</head>
+<script>
+function squareDigits(num){
+    var result = '';
+    // splits the number 
+    var digits = num.toString().split('');
+    // converts string into an array of numbers
+    var realDigits = digits.map(Number);
+    // loop through array of numbers
+    for(var i = 0; i < realDigits.length; i++) {
+        result += ((realDigits[i] * realDigits[i]) + ''); 
+    }
+    // converts string representation of number back to an actual number
+    var answer = parseInt(result);
+    console.log(answer);
+}
+
+squareDigits(9119);
+</script>
+<body>
+<h1>Square every digit and get the new number.</h1>
+</body>
+</html>
