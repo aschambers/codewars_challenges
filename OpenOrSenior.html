@@ -8,11 +8,11 @@
 function openOrSenior(data){
 	var array = [];
   	for(var i = 0; i < data.length; i++) {
-    	if(data[0,i][0] >= 55 && data[0,i][1] > 7) {
-      		array.push('Senior');
-    	} else {
-      		array.push('Open');
-    	}
+    		if(data[0,i][0] >= 55 && data[0,i][1] > 7) {
+      			array.push('Senior');
+    		} else {
+      			array.push('Open');
+    		}
   	}
   	console.log(array);
 }
